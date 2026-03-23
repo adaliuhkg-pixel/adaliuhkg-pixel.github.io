@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About - Learning Japanese</title>
+    <title>Contact - Learning Japanese</title>
 
     <style>
 
@@ -80,6 +80,58 @@
 
         }
 
+        form {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+
+        }
+
+        label {
+
+            font-weight: bold;
+
+        }
+
+        input, textarea {
+
+            padding: 10px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 4px;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        button {
+
+            background-color: #6a2c91;
+
+            color: white;
+
+            padding: 10px 20px;
+
+            border: none;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+        button:hover {
+
+            background-color: #5a2379;
+
+        }
+
         footer {
 
             text-align: center;
@@ -106,7 +158,7 @@
 
 <header>
 
-    <h1>About - Learning Japanese</h1>
+    <h1>Contact - Learning Japanese</h1>
 
     <nav>
 
@@ -128,13 +180,27 @@
 
 <div class="content">
 
-    <h2>Meet Liu Suet Ying</h2>
+    <h2>Get in Touch</h2>
 
-    <p>Hello! My name is Liu Suet Ying, and I am passionate about learning and teaching the Japanese language. My journey with Japanese began a few years ago, and it has been an incredible experience filled with fascinating culture and rich history.</p>
+    <p>Have questions or want to get in touch? Feel free to send me a message!</p>
 
-    <p>I aim to share my knowledge and love for the Japanese language with others. Whether you're a beginner or looking to improve your skills, I hope to provide valuable resources and support to help you on your language-learning journey.</p>
+    <form>
 
-    <p>Thank you for visiting, and I look forward to learning together!</p>
+        <label for="name">Name:</label>
+
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
 
 </div>
 
@@ -149,5 +215,3 @@
 </body>
 
 </html>
-      
-
